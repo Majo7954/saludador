@@ -1,11 +1,21 @@
-function saludar (nombre){
+  function saludar(nombre) {
     return nombre;
-  }
+}
 
-  function edadp (edad){
-    if(edad>30){
-        return "sr"
+function edadp(edad, genero) {
+    if (edad > 30) {
+        if (genero == "F") {
+            return "SRA";
+        } else {
+            return "SR";
+        }
+    } else {
+        if (genero == "F") {
+            return "jovencita";
+        } else {
+            return "joven";
+        }
     }
-    return "joven";
-  }
-  export { saludar, edadp };
+}
+
+export { saludar, edadp };
