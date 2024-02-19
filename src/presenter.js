@@ -1,4 +1,4 @@
-import { saludar, edadp } from "./saludar.js";
+import { saludar, edadp, SaludadorHorario } from "./saludar.js";
 
 const nombre_input = document.querySelector("#nombre");
 const edad_input = document.querySelector("#edad");
@@ -12,5 +12,5 @@ form.addEventListener("submit", (event) => {
     const nombre = nombre_input.value;
     const edad = parseInt(edad_input.value);
     const genero = genero_input.value;
-    div.innerHTML = `<p>Hola ${edadp(edad, genero)}, ${saludar(nombre)}.</p>`;
+    div.innerHTML = `<p> ${SaludadorHorario()},${edadp(edad, genero)} ${saludar(nombre)}.</p>`;
 });
