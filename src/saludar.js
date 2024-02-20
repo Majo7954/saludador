@@ -17,7 +17,7 @@ function edadp(edad, genero, idioma) {
               return "joven";
           }
       }
-  } else{
+  } else if (idioma === "IN") {
       if (edad > 30) {
           if (genero == "F") {
               return "Miss";
@@ -45,13 +45,13 @@ function SaludadorHorario(idioma) {
   } else {
      saludo = "Buenas noches";
   }
- } else if (idioma === "EN") {
+ } else if (idioma === "IN") {
   if (hora >= 6 && hora < 12) {
     saludo = "Good morning";
 } else if (hora >= 12 && hora < 19) {
     saludo = "Good afternoon";
 } else {
-   saludo = "Good nigth";
+   saludo = "Good night";
 }
  }
   return saludo;
