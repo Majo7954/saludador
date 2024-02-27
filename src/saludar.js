@@ -16,11 +16,11 @@ function edadp(edad, genero, idioma) {
         } else {
             return genero === "F" ? "girl" : "boy";
         }
-    } else if (idioma === "FR") { // Agregado el idioma francés
+    } else if (idioma === "FR") { 
         if (edad > 30) {
-            return genero === "F" ? "Madame" : "Monsieur"; // Saludo en francés para personas mayores de 30 años
+            return genero === "F" ? "Madame" : "Monsieur";
         } else {
-            return genero === "F" ? "jeune fille" : "jeune homme"; // Saludo en francés para personas menores de 30 años
+            return genero === "F" ? "jeune fille" : "jeune homme"; 
         }
     }
 }
