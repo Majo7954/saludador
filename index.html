@@ -10,9 +10,12 @@
         <input type="text" id="nombre" required/> 
         <label for="edad">Edad :</label>
         <input type="number" id="edad" required/>
-        <label for="genero">Genero (pon F o M):</label>
-        <input type="text" id="genero" required/>
-        <label for="idioma">Idioma (pon ES, IN o FR):</label>
+        <label>Genero:</label>
+        <input type="radio" id="genero-f" name="genero" value="F" required/>
+        <label for="genero-f">Femenino</label>
+        <input type="radio" id="genero-m" name="genero" value="M" required/>
+        <label for="genero-m">Masculino</label> <p>
+        <label for="idioma">Idioma (pon ES, EN o FR):</label>
         <input type="text" id="idioma" required/>
         <input type="submit" value="Saludar" id="saludar-button" />
     </form>
@@ -20,4 +23,3 @@
     <script type="module" src="./src/presenter.js"></script>
 </body>
 </html>
-
