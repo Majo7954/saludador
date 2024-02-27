@@ -1,3 +1,4 @@
+// saludar.js
 function saludar(nombre) {
     return nombre;
 }
@@ -14,6 +15,12 @@ function edadp(edad, genero, idioma) {
             return genero === "F" ? "Miss" : "Mister";
         } else {
             return genero === "F" ? "girl" : "boy";
+        }
+    } else if (idioma === "FR") { // Agregado el idioma francés
+        if (edad > 30) {
+            return genero === "F" ? "Madame" : "Monsieur"; // Saludo en francés para personas mayores de 30 años
+        } else {
+            return genero === "F" ? "jeune fille" : "jeune homme"; // Saludo en francés para personas menores de 30 años
         }
     }
 }
@@ -36,6 +43,14 @@ function SaludadorHorario(idioma) {
             saludo = "Good afternoon";
         } else {
             saludo = "Good night";
+        }
+    } else if (idioma === "FR") { // Agregado el idioma francés
+        if (hora >= 6 && hora < 12) {
+            saludo = "Bonjour";
+        } else if (hora >= 12 && hora < 19) {
+            saludo = "Bon après-midi";
+        } else {
+            saludo = "Bonne nuit";
         }
     }
     return saludo;
